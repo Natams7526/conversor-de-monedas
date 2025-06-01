@@ -36,6 +36,7 @@ Una aplicación Java pura que te permite convertir montos entre diferentes moned
 ---
 
 ## 📦 Estructura del Proyecto
+
 conversorDeMonedas/
 │
 ├── src/
@@ -47,10 +48,6 @@ conversorDeMonedas/
 ├── lib/
 │ └── gson-2.10.1.jar
 
-
-
-
-
 ---
 
 ## ▶️ ¿Cómo ejecutar el proyecto?
@@ -59,30 +56,28 @@ conversorDeMonedas/
 
    ```bash
    git clone https://github.com/Natams7526/conversor-de-monedas.git
-   2. Importa el proyecto en Eclipse:
+   
+2. **Importa el proyecto en Eclipse:**
 
--Ve a File > Import > Existing Java Project.
+  -Ve a File > Import > Existing Java Project.
 
--Selecciona la carpeta clonada.
+  -Selecciona la carpeta clonada.
 
-3. Agrega la librería Gson:
+3. **Agrega la librería Gson:**
 
--Clic derecho sobre el proyecto > Build Path > Configure Build Path.
+  -Clic derecho sobre el proyecto > Build Path > Configure Build Path.
 
--Ve a la pestaña Libraries > Add External JARs... y agrega gson-2.10.1.jar.
+  -Ve a la pestaña Libraries > Add External JARs... y agrega gson-2.10.1.jar.
 
-4.Ejecuta el programa:
+4. ** Ejecuta el programa:**
 
--Abre la clase Principal.java.
+  -Abre la clase Principal.java.
 
--Haz clic derecho > Run As > Java Application.
+  -Haz clic derecho > Run As > Java Application.
 
 
 
-🧪 Ejemplo de uso
-yaml
-Copiar
-Editar
+## 🧪 Ejemplo de uso
 
 👋 ¡Bienvenido/a al conversor de monedas!
 👉 MONEDA BASE: 1
@@ -92,3 +87,7 @@ Editar
 100 USD son 398000 COP
 
 🔁 ¿Otra conversión? (s/n): n
+
+## 📸 Captura de pantalla
+
+![Vista del Conversor]()
