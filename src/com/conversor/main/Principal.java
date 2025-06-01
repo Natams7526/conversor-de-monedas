@@ -1,9 +1,12 @@
 package com.conversor.main;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+import com.conversor.HistorialConversion.HistorialConversion;
 import com.conversor.conversorDeMonedas.ConversorDeMonedas;
 import com.conversor.servicio.ClienteHttp;
 
@@ -25,6 +28,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 
+		List<HistorialConversion> historial = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in);
 		boolean continuar = true;
 
@@ -60,7 +64,10 @@ public class Principal {
 			String json = cliente.obtenerDatosConversion(monedaBase);
 
 			ConversorDeMonedas conversor = new ConversorDeMonedas();
-			conversor.convertirMoneda(json, monedaBase, monedaDestino, cantidad);
+			double resultado = conversor.convertirMoneda(json, monedaBase, monedaDestino, cantidad);
+			
+			HistorialConversion registro = new HistorialConversion(monedaBase, monedaDestino, cantidad, resultado);
+			historial.add(registro);
 
 			System.out.print("\n🔁 ¿Deseas hacer otra conversión? (s/n): ");
 			String respuesta = scanner.next();
