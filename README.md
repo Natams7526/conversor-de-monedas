@@ -90,4 +90,4 @@ conversorDeMonedas/
 
 ## 📸 Captura de pantalla
 
-![Vista del Conversor]()
+![Vista del Conversor](lib/conversor.png)
